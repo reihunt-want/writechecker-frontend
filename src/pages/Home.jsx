@@ -30,7 +30,7 @@ export default function Home({ setPage }) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {features.map((f, i) => (
             <div key={i} className="bg-white p-8 rounded-2xl border border-slate-200/60 hover:border-indigo-200 shadow-sm hover:shadow-md transition-all group">
               <div className="p-3 bg-slate-50 group-hover:bg-indigo-50 rounded-xl w-fit mb-5 transition-colors">
