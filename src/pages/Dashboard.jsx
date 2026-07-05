@@ -207,13 +207,13 @@ export default function Dashboard({ setPage }) {
                 <FingerprintAnalysis data={result.fingerprint} />
                 <AnalyticsDashboard radarData={result.radarMetrics} pieData={result.composition} />
                 <ComparisonPanel reasons={result.comparisonReasons} />
-                {result.stats.aiScore > 20 && (
+                {/* {result.stats.aiScore > 20 && (
                   <SuggestionPanel
                     suggestions={result.suggestions}
                     onApplySuggestion={handleApplyParafrase}
                   />
                 )}
-                <ExportPanel />
+                <ExportPanel /> */}
               </div>
             )}
           </div>
