@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
       allowedHosts: true,
       proxy: {
         '/api': {
-          target: env.VITE_API_BASE_URL || 'https://hanisme-writespace.hf.space',
+          target: env.VITE_API_BASE_URL || 'https://hanisme-writechecker.hf.space',
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api/, ''),
         },
