@@ -1,4 +1,5 @@
-const API_URL = "/api"; // lewat proxy Vite
+// Gunakan link Hugging Face secara otomatis saat di Vercel, atau fallback ke proxy saat di lokal
+const API_URL = import.meta.env.VITE_API_BASE_URL || "https://hanisme-writechecker.hf.space";
 
 export async function analyzeText(text) {
   const response = await fetch(`${API_URL}/predict`, {
