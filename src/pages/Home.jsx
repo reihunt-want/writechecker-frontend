@@ -10,8 +10,8 @@ const features = [
   { icon: <Cpu className="text-purple-600" />, title: "Skor Keaslian", desc: "Memberikan rasio matematis komparatif yang presisi antara mesin dan manusia." },
   { icon: <Target className="text-emerald-600" />, title: "Confidence Score", desc: "Mengukur tingkat kepastian sistem analitik terhadap hasil deteksi akhir." },
   { icon: <Highlighter className="text-orange-600" />, title: "Highlight Kalimat AI", desc: "Menyoroti bagian tulisan dengan gradasi warna berbasis tingkat risiko indikasi AI." },
-  { icon: <RefreshCw className="text-blue-600" />, title: "Saran Parafrase", desc: "Menyediakan alternatif susunan kalimat otomatis agar terdengar lebih organis." },
-  { icon: <FileDown className="text-rose-600" />, title: "Export Laporan", desc: "Simpan hasil audit teks ke dalam berkas berkualifikasi industri dalam sekali klik." }
+  //{ icon: <RefreshCw className="text-blue-600" />, title: "Saran Parafrase", desc: "Menyediakan alternatif susunan kalimat otomatis agar terdengar lebih organis." },
+  //{ icon: <FileDown className="text-rose-600" />, title: "Export Laporan", desc: "Simpan hasil audit teks ke dalam berkas berkualifikasi industri dalam sekali klik." }
 ];
 
 export default function Home({ setPage }) {
@@ -51,12 +51,12 @@ export default function Home({ setPage }) {
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mt-2">Alur Kerja Evaluasi Teks</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
             {[
               { num: "01", t: "Unggah / Paste Konten", d: "Tempel berkas teks murni atau seret dokumen .pdf, .docx, dan .txt." },
               { num: "02", t: "Eksekusi Deep Scan", d: "Mesin simulasi mengukur metrik keaslian bahasa secara masif." },
               { num: "03", t: "Analisis Visualisasi", d: "Lihat klaster kode warna penanda kalimat AI dan kalkulasi grafik radar." },
-              { num: "04", t: "Parafrase Instan", d: "Terapkan saran rekonstruksi kalimat natural bertenaga asisten internal." }
+              //{ num: "04", t: "Parafrase Instan", d: "Terapkan saran rekonstruksi kalimat natural bertenaga asisten internal." }
             ].map((step, idx) => (
               <div key={idx} className="bg-slate-800/50 border border-slate-800 p-6 rounded-2xl relative">
                 <span className="text-5xl font-black text-indigo-500/20 absolute top-4 right-4">{step.num}</span>
