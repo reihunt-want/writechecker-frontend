@@ -7,9 +7,10 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react(), tailwindcss()],
     server: {
+      allowedHosts: true,
       proxy: {
         '/api': {
-          target: env.VITE_API_BASE_URL || 'http://localhost:8000',
+          target: env.VITE_API_BASE_URL || 'https://hanisme-writechecker.hf.space',
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api/, ''),
         },

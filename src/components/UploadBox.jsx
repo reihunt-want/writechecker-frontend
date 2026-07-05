@@ -30,7 +30,7 @@ export default function UploadBox({ onFileSelect }) {
           clearInterval(interval);
           setUploading(false);
           // Beri umpan balik ke komponen induk bahwa file terunggah
-          onFileSelect(selectedFile.name);
+          onFileSelect(selectedFile);
           return 100;
         }
         return prev + 25;
